@@ -1,0 +1,42 @@
+\documentclass[preview, border=2pt]{standalone}
+%\documentclass[varwidth, border=2pt,convert={png,size=1714,density=300}]{standalone}
+%\documentclass[varwidth, border=2pt]{standalone}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{font={small}, skip=0pt, margin=0cm, singlelinecheck=false}
+%\captionsetup[subfigure]{labelformat=simple, labelsep=space, justification=raggedright, singlelinecheck=false}
+%\renewcommand{\thesubfigure}{(\alph{subfigure})} % Format as (a), (b), (c)
+
+\usepackage{geometry}
+
+\begin{document}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.95\textwidth}
+         \centering
+         \caption{}
+         \includegraphics[width=\textwidth]{exp_vel_mag_contour_Cd_0001.png}
+     \end{subfigure}
+     \hfill     
+     \begin{subfigure}[b]{0.95\textwidth}
+         \centering
+         \caption{}
+         \includegraphics[width=\textwidth]{exp_vel_mag_contour_Cd_0005.png}
+     \end{subfigure}
+     \hfill     
+     \begin{subfigure}[b]{0.95\textwidth}
+         \centering
+         \caption{}
+         \includegraphics[width=\textwidth]{exp_vel_mag_contour_Cd_0009.png}
+     \end{subfigure}
+     \hfill     
+     \begin{subfigure}[b]{0.95\textwidth}
+         \centering
+         \caption{}
+         \includegraphics[width=\textwidth]{exp_vel_mag_contour_Cd_0013.png}
+     \end{subfigure}     
+\end{figure}
+
+\end{document}

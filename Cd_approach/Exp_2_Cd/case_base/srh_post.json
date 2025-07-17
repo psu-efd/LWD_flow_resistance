@@ -1,0 +1,1 @@
+{"OUT_FILE":"Case_XMDFC.h5","SRH_POST_OUT_FILE":"Case_XMDF.h5","GEOM_FILE":"LWD_flume_experiments.srhgeom","ARC_IDS":[4,5],"GRID_UUID":"7772a51f-fec3-4cae-a46c-f2fe2631bc3b","LENGTH_UNITS":"GridUnit \"METER\"","DATASET_NAMES":["B_Stress_lb_p_ft2","Froude","Vel_Mag_ft_p_s","Velocity","Water_Depth_ft","Water_Elev_ft"]}
