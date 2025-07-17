@@ -9,8 +9,11 @@ This repository has data, simulation case setups, and processing scripts for the
 </p>
 
  The governing equations for most 2D depth-averaged models are as follows:
+
 $$\frac{\partial h}{\partial t} + \frac{\partial h u}{\partial x} + \frac{\partial h v}{\partial y} =0 $$
+
 $$ \frac{\partial h u}{\partial t} + \frac{\partial h u u}{\partial x} + \frac{\partial h u v}{\partial y} =  \frac{\partial h {T_{xx}}}{\partial x}+\frac{\partial h {T_{xy}}}{\partial y}-gh\frac{\partial \left(h+z_b\right)}{\partial x}-\frac{\tau_{bx}}{\rho} - \frac{F_{D,x}}{\rho A_{footprint}}$$
+
 $$\frac{\partial h v}{\partial t} + \frac{\partial h uv}{\partial x} + \frac{\partial h v v}{\partial y} =  \frac{\partial h{T_{xy}}}{\partial x}+\frac{\partial h {T_{yy}}}{\partial y}-gh\frac{\partial \left(h+z_b\right)}{\partial y}-\frac{\tau_{by}}{\rho} - \frac{F_{D,y}}{\rho A_{footprint}}$$
 
 The bed shear stresses, $\tau_{bx}$ and $\tau_{by}$, can be computed with the Manning’s resistance equation as:
