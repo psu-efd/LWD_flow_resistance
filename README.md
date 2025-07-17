@@ -17,9 +17,13 @@ $$ \frac{\partial h u}{\partial t} + \frac{\partial h u u}{\partial x} + \frac{\
 $$\frac{\partial h v}{\partial t} + \frac{\partial h uv}{\partial x} + \frac{\partial h v v}{\partial y} =  \frac{\partial h{T_{xy}}}{\partial x}+\frac{\partial h {T_{yy}}}{\partial y}-gh\frac{\partial \left(h+z_b\right)}{\partial y}-\frac{\tau_{by}}{\rho} - \frac{F_{D,y}}{\rho A_{footprint}}$$
 
 The bed shear stresses, $\tau_{bx}$ and $\tau_{by}$, can be computed with the Manning’s resistance equation as:
-$$(\tau_{bx}, \tau_{by}) = \rho C_f \sqrt{u^2+v^2}(u,v)$$
-where $\rho$ is the density of water, $C_f = g n^2/h^{1/3}$, and $n$ is the Manning’ s roughness coefficient. The drag forces in the momentum equations above can be computed as:
+
+$$(\tau_{bx}, \tau_{by}) = \rho C_f \sqrt{u^2+v^2}(u,v)$$ 
+
+where $\rho$ is the density of water, $C_f = g n^2/h^{1/3}$, and $n$ is the Manning’ s roughness coefficient. The drag forces in the momentum equations above can be computed as: 
+
 $$(F_{D,x}, F_{D,y}) = \frac{1}{2} C_d \rho A_{projection} \sqrt{u^2 + v^2} (u,v)$$
+
 where $A_{projection}$ is the projected area of the LWD on the projection plane which is perpendicular to the flow direction. 
 
 This paper deals with the question of how to parameterize the LWD-induced flow resistance using the drag coefficient $C_d$ and the Manning's $n$. A modeler can choose to use either $C_d$ or Manning's $n$ to represent LWD flow resistance, which essentially are equivalent, though they come from different concept.
