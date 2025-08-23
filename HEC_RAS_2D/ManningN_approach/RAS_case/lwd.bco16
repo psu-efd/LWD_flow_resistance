@@ -1,0 +1,70 @@
+ 
+                                              HEC-RAS - River Analysis System
+ 
+ 
+Project File:  C:\Users\xzl123\Dropbox\student_thesis\Fikri\LWD_flow_resistance\open_data_repositories\LWD_flow_resistance\HEC_RAS_2D\ManningN_approach\RAS_case\lwd.prj
+ 
+Project Name:  lwd
+ 
+ 
+Plan Name:     case_16
+ 
+Short ID:      case_16
+ 
+
+Starting Time:   31Aug2008 2400
+
+Ending Time:     01Sep2008 0020
+
+
+                ################################################
+                #                                              #
+                #                                              #
+                #       1D and 2D Unsteady Flow Module         #
+                #                                              #
+                #                                              #
+                #          HEC-RAS 6.6 September 2024          #
+                #                                              #
+                #             18AUG25 at 15:49:59              #
+                #                                              #
+                ################################################
+                
+ 
+ 
+ 
+
+         US Inflow      DS Outflow       Lat Hydro        SA Hydro     Groundwater      Diversions   Precip Excess
+         *********      **********       *********        ********     ***********      **********   *************
+                                                                                                                                  
+
+    Start 1D Reach  Final 1D Reach   Starting SA's      Final SA's
+    **************  **************   *************      **********
+                                                                  
+
+
+
+                 ***   Volume Accounting for 2D Flow Area in 1000 m^3   ***
+
+           2D Area    Starting Vol      Ending Vol      Cum Inflow     Cum Outflow           Error   Percent Error
+           *******    ************      **********      **********     ***********           *****   *************
+ 
+ 
+             flume        0.007742        0.007849          0.1862          0.1861    0.0000000111    0.0000059811
+
+
+
+                 ***  Total Volume Accounting (for the entire model) in 1000 m^3   ***
+
+Total Boundary Flux of Water In           0.1862
+Total Boundary Flux of Water Out          0.1861
+
+Starting Volume                         0.007742
+Ending Volume                           0.007849
+
+
+                             Error   Percent Error
+                             *****   *************
+                      0.0000000111    0.0000057424
+
+
+

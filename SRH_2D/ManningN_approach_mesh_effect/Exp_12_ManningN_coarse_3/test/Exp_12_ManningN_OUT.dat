@@ -1,0 +1,108 @@
+
+
+ *******************************************************************
+ *                                                                 *
+ *                    SRH-2D Version 3.6.5                         *
+ *             Sedimentation-River-Hydraulics (SRH) Model          *
+ *                                                                 *
+ *        Technical Service Center,  Bureau of Reclamation         *
+ *        Contact: Yong G. Lai, Ph.D., ylai@usbr.gov               *
+ *                                                                 *
+ *******************************************************************
+
+ ==> Code Execution Year-Month-Date:  2025  8 10
+
+
+ ************************************************************
+ *          Summary of Input Parameters and Variables       *
+ ************************************************************
+
+ SRH MODULE USED:
+      Flow-Only Modeling
+      Temperature Module is not activated
+      Bank Erosion Module is not activated
+      Turbulence Model: Depth-averaged parabolic zero-equation model
+
+ MESH SIZE INFO:
+      Total number of cells:               4530
+      Total number of mesh points:         4712
+      Total number of faces:               9241
+      Total number of boundary faces:       362
+      NCLVT:                              18120
+      Number of Mesh Blocks:                  1
+      Mesh Type: Unstructured mesh - SMS-2DM format
+
+ STEADY/UNSTEADY SIMULATION PARAMETERS:
+      Unsteady Simulation: YES, it is unsteady
+      Initial Condition:   New run from user specified initial condition
+      Number of time steps (ntstep):                   -1
+      Number of iterations within each time step:       3
+      Tstart(s) DT(s) DT_CHAN(s) Total_simu_time(hr):    0.0000E+00   2.0000E-01   2.0000E-01   2.0000E-01
+      Laminar kinematic viscosity:                       1.0000E-06
+      Turbulent Parabolic Model Constant:                7.0000E-01
+
+ MISCELLENEOUS PARAMETERS:
+
+ INTERMEDIATE RESULT PRINTOUT CONTROL:
+
+
+ ************************************************************
+ *       End of Input Parameters and Variables Summary      *
+ ************************************************************
+
+ ==> Mesh Size Info over Solution Domain
+     Minimum Mesh Cell Area (m^2)      =   1.269E-03
+     Maximum Mesh Cell Area (m^2)      =   1.289E-02
+     Total Solution Domain Area (m^2)  =   2.286E+01
+
+ ==> Smallest Angle between Cell-to-Cell-Base-Vector and Face =   9.000E+01
+     Located at Face=    3176;    Between two cells:    1532    1562
+
+ ==> Total water volume (m3) at t=tstart:
+     Within Model Domain =   0.0000E+00
+
+
+ *****************************************************
+ *   SIMULATION INFORMATION PRINT OUT                *
+ *****************************************************
+
+
+
+ ***********************************************************
+ **         SUMMARY OF FINAL RESULT OUTPUT
+ ***********************************************************
+
+ ================================================================
+ =  Water Flux and Total Volume at Boundaries
+ =      (Note:FLUX useful for STEADY modeling; VOLUME for UNSTEADY)
+ ================================================================
+
+ Boundary patch =  1 Total Water Volume (m^3) out of the boundary =   9.0752E+01
+                      Flux in m^3/s at the end of the computation =   1.3600E-01
+
+ Boundary patch =  2 Total Water Volume (m^3) out of the boundary =  -9.7920E+01
+                      Flux in m^3/s at the end of the computation =  -1.3600E-01
+
+ ==============================================================
+ = Total Water Volume Analysis for Mass Conservation Check
+ ==============================================================
+
+ Initial Water Volume (m3) in Domain ............................. =   0.0000E+00
+ Final   Water Volume (m3) in Domain ............................. =   7.0580E+00
+
+ Total Water Volume entering domain from boundary (m3) ........... =   9.7920E+01
+ Total Water Volume exiting  domain from boundary (m3) ........... =   9.0752E+01
+ Net Water Volume exiting domain from internal boundary (m3) ..... =   0.0000E+00
+
+ Total Rainfall Volume (m3) into domain (V_rain) ................. =   0.0000E+00
+ Total Infiltrated Volume (m3) lost from domain................... =   0.0000E+00
+
+ Water Conservation Error in Volume (m3) ......................... =   1.0981E-01
+ Percentage of above Error relative to Total_Incoming_Volume ..... =   0.10%
+ [errors due primarily to numerical discretization etc.]
+
+ ==> CPU-TIME(hours) =    9.149E-03
+
+ ==> Wall-TIME(hours) =    9.311E-03
+
+ ==> SRH is successfully executed

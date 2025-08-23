@@ -1,0 +1,17 @@
+Flow Title=
+Program Version=6.60
+BEGIN FILE DESCRIPTION:
+LWD flume exp. boundary conditions
+END FILE DESCRIPTION:
+Number of Profiles= 1 
+Profile Names=PF 1
+River Rch & RM=,                ,        
+        
+DSS Import StartDate=
+DSS Import StartTime=
+DSS Import EndDate=
+DSS Import EndTime=
+DSS Import GetInterval= 0 
+DSS Import Interval=
+DSS Import GetPeak= 0 
+DSS Import FillOption= 0 

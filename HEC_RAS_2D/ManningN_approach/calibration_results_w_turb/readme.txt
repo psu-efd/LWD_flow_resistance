@@ -1,0 +1,1 @@
+The directory to store all calibration results, such as result vtk, calibrated parameters, calibration history, etc.

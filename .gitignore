@@ -1,12 +1,19 @@
 
 **/case_*/
 !**/case_base/
-SRH-2D_cases/flow_partition/results/*.vtk
-SRH-2D_cases/flow_partition/results/*.json
+
+
 *.npz
 *.pkl
 *.vti
 src/results/*.vtk
+
+*.h5
+
+
+results_for_all_cases.xlsx
+
+copy_files.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

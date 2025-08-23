@@ -1,6 +1,11 @@
 # Flow Resistance Parameterization for Large Woody Debris in 2D Depth-Averaged Models
 
-This repository has data, simulation case setups, and processing scripts for the paper "Large Woody Debris Flow Resistance Parameterization in Two-Dimensional Depth-Averaged Models". The setup of the problem is shown in the figure below.
+This repository has data, simulation case setups, and processing scripts for the following papers 
+
+* "Large Woody Debris Flow Resistance Parameterization in Two-Dimensional Depth-Averaged Models" 
+* "Modeling Large Woody Debris: A Comparison between SRH-2D and HEC-RAS 2D" 
+
+The setup of the problem is shown in the figure below.
 
 <p align="center">
   <img src="images/scheme_diagram_flow_resistance.png" width="400" alt="Flow over porous structure">
@@ -26,7 +31,9 @@ $$(F_{D,x}, F_{D,y}) = \frac{1}{2} C_d \rho A_{projection} \sqrt{u^2 + v^2} (u,v
 
 where $A_{projection}$ is the projected area of the LWD on the projection plane which is perpendicular to the flow direction. 
 
-This paper deals with the question of how to parameterize the LWD-induced flow resistance using the drag coefficient $C_d$ and the Manning's $n$. A modeler can choose to use either $C_d$ or Manning's $n$ to represent LWD flow resistance, which essentially are equivalent, though they come from different concept.
+This work deals with the question of how to parameterize the LWD-induced flow resistance using the Manning's $n$ and the drag coefficient $C_d$ (or anything equivalent). A modeler can choose to use either $C_d$ or Manning's $n$ to represent LWD flow resistance, which essentially are equivalent, though they come from different concept.
+
+The parameter values in this work are determined through the calibration process using the Gaussian Process Optimization. The calibration data are from flume experiments.  
 
 ## Prerequisites
 
@@ -51,13 +58,33 @@ Install the latest version of `pyHMT2D` from the GitHub repository. `pyHMT2D` is
 pip install git+https://github.com/psu-efd/pyHMT2D.git
 ```
 
-## SRH-2D Simulations
+## Computational Models
+Two popular models, i.e., SRH-2D by USBR and HEC-RAS 2D v6.6 by USACE were adopted in this work. 
 
-The SRH-2D simulation cases are in the `Cd_approach` and `ManningN_approach` folders, for the approaches using $C_d$ and Manning's $n$, respectively. In each of the folders, the setup for each of the sixteen cases is in its own subdirectory. For example, `Exp_1_Cd` has the case and python script for Experiment \#1 using the $C_d$ approach. The python scripts within automate the calibration process using the Gaussian Process Optimization. Once the optimized parameter value is found, all cases can be run again using the optimal values and the results are postprocess for further analysis and plotting. Notably, the SRH-2D results are converted to VTK format using the `pyHMT2D` library.
+### SRH-2D Simulations
+
+The SRH-2D simulation cases are in `SRH-2D` folder, which contains the following subfolders:
+
+* `Cd_approach_w_turb`: with the drag approach and turbulence model is on
+* `Cd_approach_wo_turb`: with the drag approach and turbulence model is off (with a very small turbulent model parameter)
+* `Cd_approach_mesh_effect`: with the drag approach and different mesh resolutions to study the effect of mesh
+*  `ManningN_approach_w_turb`: with the Manning's $n$ approach and turbulence model is on
+* `ManningN_approach_wo_turb`: with the Manning's $n$ approach and turbulence model is off (with a very small turbulent model parameter)
+* `Manning_approach_mesh_effect`: with the Manning's $n$ approach and different mesh resolutions to study the effect of mesh
+* `exp_comp_plotting`: plotting scripts for generating the paper "Large Woody Debris Flow Resistance Parameterization in Two-Dimensional Depth-Averaged Models".
+
+In each of the folders, the setup for each of the sixteen cases is in its own subdirectory. For example, `Exp_1_Cd` has the case and python script for Experiment \#1 using the $C_d$ approach. The python scripts within automate the calibration process using the Gaussian Process Optimization. Once the optimized parameter value is found, all cases can be run again using the optimal values and the results are postprocess for further analysis and plotting. Notably, the SRH-2D results are converted to VTK format using the `pyHMT2D` library.
+
+### HEC-RAS 2D Simulations
+
+Simulation cases are organized in HEC-RAS project using simulation plans. HEC-RAS version 6.6 is used because this is the first version that supports the additional drag term. The content within the folder `HEC_RAS_2D` is similar to the `SRH_2D` folder.
 
 ## Processing and Plotting
 
-Processing and the generation of most of the figures in the paper are done through python scripts in the directory `exp_comp_plotting`. 
+Processing and the generation of most of the figures in the papers are done through python scripts. There are two places:
+
+* `SRH_2D/exp_comp_plotting`: for the paper "Large Woody Debris Flow Resistance Parameterization in Two-Dimensional Depth-Averaged Models"
+* `plotting_SRH_vs_RAS`: for the paper "Modeling Large Woody Debris: A Comparison between SRH-2D and HEC-RAS 2D"
 
 ## License
 

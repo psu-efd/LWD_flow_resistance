@@ -1,0 +1,1 @@
+This folder contains the simulation cases for the SRH-2D model with the drag approach and different mesh resolutions to study the effect of mesh. Only Cases 4, 8, 12, and 16 are selected.

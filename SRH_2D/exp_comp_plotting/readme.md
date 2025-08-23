@@ -1,0 +1,1 @@
+This folder contains the plotting scripts for generating the paper "Large Woody Debris Flow Resistance Parameterization in Two-Dimensional Depth-Averaged Models".
