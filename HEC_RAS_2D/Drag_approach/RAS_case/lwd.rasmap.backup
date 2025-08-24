@@ -1709,7 +1709,7 @@
     <Layer Name="case_15" Type="RASEventConditions" Filename=".\lwd.u15.hdf" />
     <Layer Name="case_16" Type="RASEventConditions" Filename=".\lwd.u16.hdf" />
   </EventConditions>
-  <Results Checked="True">
+  <Results Checked="True" Expanded="True">
     <Layer Name="case_01" Type="RASResults" Expanded="True" Filename=".\lwd.p01.hdf">
       <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\lwd.p01.hdf">
         <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\lwd.p01.hdf">
@@ -2627,7 +2627,7 @@
         <MapParameters MapType="elevation" ProfileIndex="2147483647" ProfileName="Max" />
       </Layer>
     </Layer>
-    <Layer Name="case_08" Type="RASResults" Checked="True" Expanded="True" Filename=".\lwd.p08.hdf">
+    <Layer Name="case_08" Type="RASResults" Expanded="True" Filename=".\lwd.p08.hdf">
       <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\lwd.p08.hdf">
         <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\lwd.p08.hdf">
           <ResampleMethod>near</ResampleMethod>
@@ -2768,8 +2768,8 @@
         <MapParameters MapType="elevation" ProfileIndex="14" ProfileName="01SEP2008 00:14:00" />
       </Layer>
     </Layer>
-    <Layer Name="case_09" Type="RASResults" Expanded="True" Filename=".\lwd.p09.hdf">
-      <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\lwd.p09.hdf">
+    <Layer Name="case_09" Type="RASResults" Checked="True" Expanded="True" Filename=".\lwd.p09.hdf">
+      <Layer Name="Event Conditions" Type="RASEventConditions" Expanded="True" Filename=".\lwd.p09.hdf">
         <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\lwd.p09.hdf">
           <ResampleMethod>near</ResampleMethod>
           <Surface On="True" />
@@ -2781,8 +2781,18 @@
           <Metadata BandIndex="0" SubDataset="" />
         </Layer>
       </Layer>
-      <Layer Type="RASGeometry" Filename=".\lwd.p09.hdf">
+      <Layer Type="RASGeometry" Checked="True" Expanded="True" Filename=".\lwd.p09.hdf">
         <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
+        <Layer Type="RASD2FlowArea" Checked="True">
+          <DataColumnGroupVisibilities>
+            <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="False" />
+          </DataColumnGroupVisibilities>
+        </Layer>
+        <Layer Type="MeshPerimeterLayer">
+          <DataColumnGroupVisibilities>
+            <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="True" />
+          </DataColumnGroupVisibilities>
+        </Layer>
         <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
         <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Bridges/Culverts" />
         <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
@@ -2868,7 +2878,7 @@
             </ValueToSymbology>
           </SymbologyByAttributeColumns>
         </Layer>
-        <Layer Type="FinalNValueLayer">
+        <Layer Type="FinalNValueLayer" Checked="True">
           <ResampleMethod>near</ResampleMethod>
           <Surface On="True" />
         </Layer>
@@ -2880,6 +2890,7 @@
           <ResampleMethod>near</ResampleMethod>
           <Surface On="True" />
         </Layer>
+        <Layer Name="Manning's n" Type="InterpretationOverrideGroupLayer" Expanded="True" />
       </Layer>
       <Layer Name="Plan" Type="RASPlan" Filename=".\lwd.p09.hdf" GeometryHDF=".\lwd.p09.hdf">
         <Layer Name="Encroachments" Type="RASEncroachments" Filename=".\lwd.p09.hdf" />
@@ -2889,13 +2900,13 @@
       <Layer Name="Depth" Type="RASResultsMap">
         <MapParameters MapType="depth" ProfileIndex="2147483647" ProfileName="Max" />
       </Layer>
-      <Layer Name="Velocity" Type="RASResultsMap" Checked="True">
+      <Layer Name="Velocity" Type="RASResultsMap">
         <Symbology>
           <SurfaceFill Colors="-16777077,-16776961,-7278960,-256,-23296,-47872,-7667712" Values="0,2,4,6,8,10,15" Stretched="True" AlphaTag="255" UseDatasetMinMax="False" RegenerateForScreen="True" />
         </Symbology>
         <MapParameters MapType="velocity" ProfileIndex="20" ProfileName="01SEP2008 00:20:00" />
       </Layer>
-      <Layer Name="WSE" Type="RASResultsMap">
+      <Layer Name="WSE" Type="RASResultsMap" Checked="True">
         <MapParameters MapType="elevation" ProfileIndex="20" ProfileName="01SEP2008 00:20:00" />
       </Layer>
     </Layer>
@@ -3977,10 +3988,10 @@
     </Layer>
   </Terrains>
   <CurrentView>
-    <MaxX>8.11948334494034</MaxX>
-    <MinX>-11.4450698222174</MinX>
-    <MaxY>6.79012552599975</MaxY>
-    <MinY>-5.91955194090325</MinY>
+    <MaxX>9.65734744375264</MaxX>
+    <MinX>-6.18994062164518</MinX>
+    <MaxY>4.86321451955641</MaxY>
+    <MinY>-5.43162422863503</MinY>
   </CurrentView>
   <VelocitySettings>
     <Density>1.5</Density>

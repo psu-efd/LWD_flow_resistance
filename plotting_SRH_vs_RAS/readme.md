@@ -1,1 +1,1 @@
-This folder contains the plotting scripts for generating the paper "Modeling Large Woody Debris: A Comparison between SRH-2D and HEC-RAS 2D".
+This folder contains the plotting scripts for generating the paper "Modeling Large Woody Debris: A Comparison between SRH-2D and HEC-RAS 2D". These scripts are mainly to compare between SRH-2D and HEC-RAS 2D.

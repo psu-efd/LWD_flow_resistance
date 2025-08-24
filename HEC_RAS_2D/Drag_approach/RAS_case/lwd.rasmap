@@ -2642,16 +2642,6 @@
       </Layer>
       <Layer Type="RASGeometry" Filename=".\lwd.p08.hdf">
         <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
-        <Layer Type="RASD2FlowArea">
-          <DataColumnGroupVisibilities>
-            <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="False" />
-          </DataColumnGroupVisibilities>
-        </Layer>
-        <Layer Type="MeshPerimeterLayer">
-          <DataColumnGroupVisibilities>
-            <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="True" />
-          </DataColumnGroupVisibilities>
-        </Layer>
         <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
         <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Bridges/Culverts" />
         <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
@@ -2769,7 +2759,7 @@
       </Layer>
     </Layer>
     <Layer Name="case_09" Type="RASResults" Checked="True" Expanded="True" Filename=".\lwd.p09.hdf">
-      <Layer Name="Event Conditions" Type="RASEventConditions" Expanded="True" Filename=".\lwd.p09.hdf">
+      <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\lwd.p09.hdf">
         <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\lwd.p09.hdf">
           <ResampleMethod>near</ResampleMethod>
           <Surface On="True" />
@@ -2781,7 +2771,7 @@
           <Metadata BandIndex="0" SubDataset="" />
         </Layer>
       </Layer>
-      <Layer Type="RASGeometry" Checked="True" Expanded="True" Filename=".\lwd.p09.hdf">
+      <Layer Type="RASGeometry" Checked="True" Filename=".\lwd.p09.hdf">
         <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
         <Layer Type="RASD2FlowArea" Checked="True">
           <DataColumnGroupVisibilities>
@@ -2890,7 +2880,6 @@
           <ResampleMethod>near</ResampleMethod>
           <Surface On="True" />
         </Layer>
-        <Layer Name="Manning's n" Type="InterpretationOverrideGroupLayer" Expanded="True" />
       </Layer>
       <Layer Name="Plan" Type="RASPlan" Filename=".\lwd.p09.hdf" GeometryHDF=".\lwd.p09.hdf">
         <Layer Name="Encroachments" Type="RASEncroachments" Filename=".\lwd.p09.hdf" />

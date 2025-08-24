@@ -1,0 +1,1 @@
+This folder contains the simulation cases for the HEC-RAS 2D model with the drag approach and the mesh effect. 

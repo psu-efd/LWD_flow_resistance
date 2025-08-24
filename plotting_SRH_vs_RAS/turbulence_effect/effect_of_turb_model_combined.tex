@@ -1,0 +1,30 @@
+\documentclass[preview, border=2pt]{standalone}
+%\documentclass[varwidth, border=2pt,convert={png,size=1714,density=300}]{standalone}
+%\documentclass[varwidth, border=2pt]{standalone}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{font={normalsize}, skip=0pt, margin=0cm, singlelinecheck=false}
+%\captionsetup[subfigure]{labelformat=simple, labelsep=space, justification=raggedright, singlelinecheck=false}
+%\renewcommand{\thesubfigure}{(\alph{subfigure})} % Format as (a), (b), (c)
+
+\usepackage{geometry}
+
+\begin{document}
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[c]{0.49\textwidth}
+         \centering
+         \caption{}
+         \includegraphics[width=\textwidth]{effect_of_turbulence_model_on_ManningN.png}
+     \end{subfigure}
+     \hfill     
+     \begin{subfigure}[c]{0.49\textwidth}
+         \centering
+         \caption{}
+         \includegraphics[width=\textwidth]{effect_of_turbulence_model_on_Cd.png}
+     \end{subfigure}
+\end{figure}
+
+\end{document}
